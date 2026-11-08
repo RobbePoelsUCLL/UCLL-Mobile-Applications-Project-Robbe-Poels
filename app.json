@@ -23,7 +23,8 @@
     },
     "plugins": ["expo-router"],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "baseUrl": "/UCLL-Mobile-Applications-Project-Robbe-Poels"
     }
   }
 }
