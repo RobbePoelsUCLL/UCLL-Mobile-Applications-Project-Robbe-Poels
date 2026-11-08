@@ -507,7 +507,7 @@ const styles = StyleSheet.create({
   },
   zoomControlsFullScreen: {
     top: 16,
-    bottom: 690,
+    height: 74,
   },
   markerSelected: {
     backgroundColor: '#C17C48',
