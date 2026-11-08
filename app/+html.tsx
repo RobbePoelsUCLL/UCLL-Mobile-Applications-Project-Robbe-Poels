@@ -1,0 +1,32 @@
+import { ScrollViewStyleReset, useServerDocumentContext } from 'expo-router/html';
+import type { PropsWithChildren } from 'react';
+
+const baseUrl = process.env.EXPO_BASE_URL ?? '';
+const basePath = baseUrl ? `/${baseUrl.replace(/^\/+|\/+$/g, '')}` : '';
+
+export default function Root({ children }: PropsWithChildren) {
+  const { headNodes, bodyNodes, htmlAttributes, bodyAttributes } = useServerDocumentContext();
+
+  return (
+    <html lang="en" {...htmlAttributes}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="theme-color" content="#fffdef" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Go Further" />
+        <link rel="manifest" href={`${basePath}/manifest.json`} />
+        <link rel="apple-touch-icon" href={`${basePath}/icons/icon-192.png`} />
+        <ScrollViewStyleReset />
+        {headNodes}
+      </head>
+      <body {...bodyAttributes}>
+        {children}
+        {bodyNodes}
+      </body>
+    </html>
+  );
+}
