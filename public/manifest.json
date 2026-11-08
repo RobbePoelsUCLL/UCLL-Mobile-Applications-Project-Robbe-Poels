@@ -1,7 +1,7 @@
 {
-  "name": "UCLL App",
-  "short_name": "UCLL",
-  "description": "UCLL mobile starter app",
+  "name": "PathFinder",
+  "short_name": "PathFinder",
+  "description": "Discover new places, one small adventure at a time.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
