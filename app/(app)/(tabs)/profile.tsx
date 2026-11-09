@@ -100,7 +100,7 @@ export default function ProfileScreen() {
       <View style={styles.badgesHeader}>
         <View>
           <Text size="lg" weight="bold" color={colors.text}>My badges</Text>
-          <Text size="sm" color={colors.textSecondary}>Little keepsakes from your outings</Text>
+          <Text size="sm" color={colors.textSecondary}>Earned by completing routes</Text>
         </View>
         <View style={styles.badgeCount}>
           <Text size="sm" weight="bold" color={colors.accent}>{badges.length}</Text>

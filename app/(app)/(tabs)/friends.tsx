@@ -5,7 +5,7 @@ import { Text } from '../../../src/components/primitives/Text';
 import { colors } from '../../../src/theme';
 
 const requests = [
-  { name: 'Geert Padvinders', handle: '@geert.padvinders', initials: 'GP', time: '2 hours ago', color: '#DDEBD9' },
+  { name: 'Geert De Padvinder', handle: '@geert.depadvinder', initials: 'GD', time: '2 hours ago', color: '#DDEBD9' },
   { name: 'Leo De Kaartlezer', handle: '@leo.dekaartlezer', initials: 'LD', time: 'Yesterday', color: '#F3E2D2' },
 ];
 
@@ -62,7 +62,6 @@ export default function FriendsScreen() {
             <Text size="sm" weight="bold" color={colors.accent}>{requests.length}</Text>
           </View>
         </View>
-        <Text size="sm" color={colors.textSecondary}>Waiting to join your adventures</Text>
       </View>
 
       <View style={styles.requestList}>
@@ -90,9 +89,7 @@ export default function FriendsScreen() {
       <View style={styles.sectionHeader}>
         <View style={styles.sectionTitleRow}>
           <Text size="lg" weight="bold" color={colors.text}>Your friends</Text>
-          <Text size="sm" color={colors.textSecondary}>{friends.length} explorers</Text>
         </View>
-        <Text size="sm" color={colors.textSecondary}>See what your friends have been discovering</Text>
       </View>
 
       <View style={styles.friendList}>
@@ -106,12 +103,10 @@ export default function FriendsScreen() {
               <View style={styles.personInfo}>
                 <Text size="md" weight="bold" color={colors.text}>{friend.name}</Text>
                 <View style={styles.statusLine}>
-                  {/* <View style={[styles.statusBullet, friend.status === 'Away' && styles.statusBulletAway]} /> */}
                   <Text size="sm" color={colors.textSecondary}>{friend.status}</Text>
                 </View>
               </View>
               <View style={styles.xpPill}>
-                <Ionicons name="sparkles" size={13} color="#BE853B" />
                 <Text size="sm" weight="bold" color={colors.text}>{friend.xp}</Text>
               </View>
             </View>
@@ -331,8 +326,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#D6A14F',
   },
   xpPill: {
-    flexDirection: 'row',
-    alignItems: 'center',
     gap: 4,
     paddingHorizontal: 8,
     paddingVertical: 6,
