@@ -1,5 +1,6 @@
 import { TextInput, View, StyleSheet } from 'react-native';
 import { Text } from './Text';
+import { colors } from '@/theme/colors';
 
 interface InputFieldProps {
   label: string;
@@ -39,6 +40,13 @@ export function InputField({
 
 const styles = StyleSheet.create({
   container: {},
-  input: {},
+  input: {
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderRadius: 13,
+    backgroundColor: colors.background,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
   inputError: {},
 });
