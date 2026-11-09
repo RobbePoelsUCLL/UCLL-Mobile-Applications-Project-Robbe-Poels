@@ -1,5 +1,5 @@
-const CACHE_NAME = 'go-further-v2';
-const CACHE_PREFIX = 'go-further-';
+const CACHE_NAME = 'path-finder-v2';
+const CACHE_PREFIX = 'path-finder-';
 const APP_SCOPE = self.registration.scope;
 
 const STATIC_ASSETS = [
