@@ -44,6 +44,19 @@
 
 The goal of this project is to create a mobile application that lets users discover new places in their surroundings, but with a twist. After a user selects one or more location themes, they are guided to a randomly selected location without knowing what the picked location is beforehand. This way the destination always remains a surprise until the moment they get there.
 
+**Target Audience**
+
+- Walkers
+- People who want to get to know their surroundings better
+- Cities and towns who want to promote their walking routes
+- People who like surprises
+
+**Competitors**
+
+- [Randonautica](https://www.randonautica.app/)
+- [Dawdle](https://dawdle.me/)
+- [RandomWalking](https://randomwalkingapp.com/)
+
 <!-- GETTING STARTED -->
 ## Getting started
 
