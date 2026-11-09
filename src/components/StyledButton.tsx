@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet } from 'react-native';
 import { Spinner } from './primitives/Spinner';
 import { Text } from './primitives/Text';
+import { colors } from '@/theme/colors';
 
 interface StyledButtonProps {
   label: string;
@@ -31,7 +32,14 @@ export function StyledButton({
 
 const styles = StyleSheet.create({
   base: { alignItems: 'center', justifyContent: 'center' },
-  primary: {},
+  primary: {
+    padding: 10,
+    minWidth: 66,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 13,
+    backgroundColor: colors.surface,
+  },
   secondary: {},
   disabled: {},
 });
