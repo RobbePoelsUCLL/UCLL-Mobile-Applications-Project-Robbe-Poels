@@ -34,21 +34,25 @@ export default function LoginScreen() {
             <Text style={styles.title}>Welcome back</Text>
             <Text style={styles.subtitle}>Sign in to continue</Text>
           </Stack>
-          <InputField
-            label="Email"
-            value={email}
-            onChangeText={setEmail}
-            placeholder="you@example.com"
-            testID="email-input"
-          />
-          <InputField
-            label="Password"
-            value={password}
-            onChangeText={setPassword}
-            secureTextEntry
-            testID="password-input"
-            error={error !== '' ? error : undefined}
-          />
+          <View style={styles.input}>
+            <InputField
+              label="Email"
+              value={email}
+              onChangeText={setEmail}
+              placeholder="you@example.com"
+              testID="email-input"
+            />
+          </View>
+          <View>
+            <InputField
+              label="Password"
+              value={password}
+              onChangeText={setPassword}
+              secureTextEntry
+              testID="password-input"
+              error={error !== '' ? error : undefined}
+            />
+          </View>
           <StyledButton
             label="Log in"
             onPress={handleLogin}
@@ -77,6 +81,9 @@ const styles = StyleSheet.create({
     padding: spacing.xxl,
     borderWidth: 1,
     borderColor: colors.border,
+  },
+  input: {
+    marginVertical: spacing.md
   },
   title: {
     fontSize: 28,
